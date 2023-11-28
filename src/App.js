@@ -4,6 +4,7 @@ import Route from "./components/Route";
 import AccordionPage from "./pages/AccordionPage";
 import DropdownPage from "./pages/DropdownPage";
 import ButtonPage from "./pages/ButtonPage";
+import ModelPage from "./pages/ModelPage";
 
 function App() {
 
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path='/buttons'>
               <ButtonPage />
+          </Route>
+          <Route path="/modal">
+            <ModelPage />
           </Route>
         </div>
       </div>
