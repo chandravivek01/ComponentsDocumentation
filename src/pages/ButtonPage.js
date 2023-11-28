@@ -7,7 +7,7 @@ import { GoDatabase } from 'react-icons/go';
 function ButtonPage() {
 
   const handleClick = () => {
-    console.log('Clicked!!')
+    
   }
 
   return (
