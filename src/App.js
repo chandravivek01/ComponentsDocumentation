@@ -5,9 +5,9 @@ function App() {
 
   const [selection, setSelection] = useState(null);
 
-  const handleSelect = ( option ) => {
+  const handleSelect = (option) => {
 
-    setSelection(option); 
+    setSelection(option);
   }
 
   const options = [
@@ -24,10 +24,13 @@ function App() {
       value: "blue"
     }
   ];
-  
+
   return (
     <>
-      <Dropdown options={options} value={selection} onChange={handleSelect} />
+      <div className="flex">
+        <Dropdown options={options} value={selection} onChange={handleSelect} />
+      </div>
+
     </>
   );
 }
