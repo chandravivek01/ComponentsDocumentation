@@ -1,9 +1,9 @@
 import classNames from 'classnames';
-import UseNavigation from '../hooks/UseNavigation';
+import useNavigation from '../hooks/use-navigation';
 
 const Link = ({ to, children, className, activeClassName }) => {
 
-    const  { navigate, currentPath } = UseNavigation();
+    const  { navigate, currentPath } = useNavigation();
 
     const classes = classNames('text-blue-500', className, currentPath === to && activeClassName);
 

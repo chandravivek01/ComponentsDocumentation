@@ -1,8 +1,8 @@
-import UseNavigation from '../hooks/UseNavigation';
+import useNavigation from '../hooks/use-navigation';
 
 const Route = ( { path, children } ) => {
 
-    const { currentPath } = UseNavigation();
+    const { currentPath } = useNavigation();
     if ( currentPath === path )
         return children;    
 
